@@ -13,7 +13,7 @@ header {
     background-color: #e4e4e4;
     display: flex;
     align-items: center;
-    position: fixed;
+    position: sticky;
 }
 
 .logo {
@@ -389,7 +389,7 @@ ul {
     padding: 10px;
 }
 
-.details a{
+.details a {
     text-decoration: none;
     color: #ffff;
     font-weight: 500;
@@ -407,22 +407,22 @@ ul {
     background-color: black;
 }
 
-.messagebox{
+.messagebox {
     background-color: white;
     z-index: 6;
-    width:500px;
+    width: 500px;
     height: 150px;
     border-radius: 20px;
     padding: 20px;
 }
 
-.messagebox p{
+.messagebox p {
     color: black;
     padding: 10px;
     font-weight: 600;
 }
 
-.messagebox label{
+.messagebox label {
     padding: 10px;
 }
 
@@ -452,9 +452,10 @@ ul {
     background-color: #ffffff;
 }
 
-.copyright{
-transform: translateX(500px);
+.copyright {
+    transform: translateX(500px);
 }
+
 .copyright p {
     width: 100%;
     /* background-color: #1b1b1b; */
@@ -464,5 +465,82 @@ transform: translateX(500px);
     text-align: center;
     color: #ffff;
     cursor: pointer;
-    
+
 }
+
+/* ------------------------------Contact page----------------------------------------- */
+
+.request-container {
+    display: flex;
+}
+
+.request-container .left-image,
+.request-container .request-form {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.request-container .left-image {
+    width: 50%;
+}
+
+.request-container .left-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.request-container .request-form {
+    width: 30%;
+    margin: 5%;
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.request-container .request-form form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.request-container .request-form form h2 {
+    color: red;
+}
+
+.request-container .request-form form label {
+    opacity: .75;
+}
+
+.request-container .request-form form input {
+
+    height: 30px;
+    border: 1.5px solid rgba(32, 33, 37, 0.3);
+    padding: 5px;
+    width: 90%;
+    border-radius: 6px;
+}
+
+.request-container .request-form form textarea {
+    border-radius: 6px;
+    width: 90%;
+    border: 1.5px solid rgba(32, 33, 37, 0.3);
+
+}
+
+.request-container .request-form form button {
+    margin: 30px 0 0 0;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: max-content;
+    border-radius: 20px;
+}
+
+/* ------------------------Contact page end */
