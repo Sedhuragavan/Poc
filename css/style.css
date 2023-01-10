@@ -777,3 +777,85 @@ input[type="submit"]:hover {
 }
 
 /* ------------------------Login page end------------------------------------ */
+
+/* ------------------------Registration page start------------------------------------ */
+
+
+.peronsal-info {
+    background: url(../images/signup.png) no-repeat center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+    align-items: center;
+}
+
+.peronsal-info .title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ff0000;
+}
+
+.peronsal-info form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.peronsal-info form .form-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.peronsal-info form .form-items .left,
+.peronsal-info form .form-items .right {
+    width: 50%;
+    padding: 5% ;
+    display: flex;
+    flex-direction: column;
+}
+
+.peronsal-info form .form-items label {
+    margin-top: 10px;
+}
+
+.peronsal-info form .form-items input,
+.peronsal-info form .form-items select {
+    height: 40px;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+
+}
+
+.peronsal-info form button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.peronsal-info form button:hover {
+    background-color: #ffff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+input {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 200px;
+}
+
+/* ------------------------Registration page end------------------------------------ */
