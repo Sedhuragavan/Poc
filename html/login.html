@@ -35,18 +35,21 @@
     <div class="login_body">
         <div class="center">
             <h1>Login</h1>
-            <form method="post">
+            <form method="post" onsubmit="return login_check()">
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="email" id="email" onchange="emailverify()" name="email" autocomplete="email" required>
                     <span></span>
-                    <label>Username</label>
+                    <label>Email Id</label>
                 </div>
+                <p class="error_p" id="email_error"></p>
                 <div class="txt_field">
-                    <input type="password" required>
+                    <input type="password" id="pass" onchange="passverify()" name="password" autocomplete="password"
+                        required>
                     <span></span>
                     <label>Password</label>
                 </div>
-                <div class="pass">Forgot Password?</div>
+                <p class="error_p" id="password_error"></p>
+                <div class="pass"><a href="./forgot.html"> Forgot Password?</a></div>
                 <input type="submit" value="Login">
                 <div class="signup_link">
                     Do not have an account? <a href="./register.html">Register</a>
@@ -59,6 +62,7 @@
             <p>Copyright &copy; 2022 | All rights reserved | Developed by Sedhuragavan L</p>
         </div>
     </footer>
+    <script src="./javascript/login.js"></script>
 </body>
 
 </html>

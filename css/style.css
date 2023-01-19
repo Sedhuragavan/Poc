@@ -680,7 +680,8 @@ ul {
 form .txt_field {
     position: relative;
     border-bottom: 2px solid #adadad;
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .txt_field input {
@@ -724,6 +725,12 @@ form .txt_field {
 .txt_field input:focus~span::before,
 .txt_field input:valid~span::before {
     width: 100%;
+}
+
+.error_p {
+    position: inherit;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .pass {
@@ -832,7 +839,6 @@ input[type="submit"]:hover {
     border-left: none;
     border-right: none;
     width: 100%;
-    border-radius: 6px;
     outline: none;
 
 }
@@ -860,3 +866,197 @@ input {
 }
 
 /* ------------------------Registration page end------------------------------------ */
+
+/* ------------------------Request page start------------------------------------ */
+/* Text feild used in login page */
+
+
+.req_first,
+.req_second {
+    align-items: center;
+    padding: 30px;
+
+}
+
+.req_first h4,
+.req_second h4 {
+    color: #ff0000;
+    font-size: 20px;
+}
+
+.patient_row1,
+.patient_row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+}
+
+.req_main {
+    display: grid;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    background-color: #e4e4e4;
+}
+
+.req_main h2 {
+    /* background-color: aqua; */
+    color: #ff0000;
+    text-align: center;
+    padding: 30px;
+}
+
+.req_center {
+    width: 100%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.req_center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+
+
+.box_change {
+    width: 200px;
+    height: 35px;
+}
+
+.box_change:focus,
+.box_change::after {
+    border: 2px solid #ff0000;
+}
+
+
+.r_container {
+    margin: 20px 50px;
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+
+.r_container p {
+    background-color: #fc6e5e;
+    color: #E8E8E8;
+    font-size: 20px;
+    padding: 30px 0px;
+    border-radius: 8px 8px 0 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.r_container h1 {
+    background-color: #ffc89a;
+    padding: 40px;
+    border-radius: 0 0 8px 8px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.counters {
+    background-color: #e4e4e4;
+    color: #ff0000;
+    text-align: center;
+}
+
+.counters h1 {
+    padding: 30px;
+}
+
+/* ------------------------Request page end------------------------------------ */
+
+/* ------------------------Forgot page start------------------------------------ */
+
+.forgot_page {
+    background-color: #e4e4e4;
+    background-size: cover;
+    color: white;
+    font-family: Sans-Serif;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 25px;
+    border-radius: 0.8rem;
+    background-color: #e4e4e4;
+}
+
+.wrapper img {
+    width: 100px;
+    padding: 10px;
+}
+
+.wrapper h1 {
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.wrapper h3 {
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.wrapper .field {
+    height: 60px;
+}
+
+.wrapper input[ type=text] {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    padding-left: 35px;
+}
+
+.wrapper span {
+    position: absolute;
+    color: #ff0000;
+    padding: 4px;
+}
+
+.wrapper button {
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 0.3rem;
+    color: white;
+    background-color: #ff0000;
+}
+
+.wrapper button:hover{
+    transition: 0.5s ease-in;
+    background-color: #ffff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.link1 p {
+    color: black;
+    padding: 10px;
+}
+
+.link1 a {
+    text-decoration: none;
+    color: #ff0000;
+}

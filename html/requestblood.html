@@ -36,51 +36,141 @@
 
     <div class="req_main">
         <h2>Request for Blood</h2>
-
         <form>
-            <div class="req_first">
-                <h4>Patient Details</h4>
-                <label for="pname">Patient Name:</label><br>
-                <input type="text" id="pname" name="pname"><br><br>
-                <label for="dname">Doctor Name:</label><br>
-                <input type="text" id="dname" name="dname"><br><br>
-                <label for="bgroup">Blood Group:</label><br>
-                <select name="bgroup" id="bgroup">
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                </select><br><br>
-                <label for="area">Area:</label><br>
-                <input type="text" id="area" name="area"><br><br>
-                <label for="city">City:</label><br>
-                <input type="text" id="city" name="city"><br><br>
-                <label for="pin">Pin Code:</label><br>
-                <input type="text" id="pin" name="pin"><br><br>
-            </div>
-            <div class="req_second">
-                <h4>Contact Details</h4>
-                <label for="cname">Contact Name:</label><br>
-                <input type="text" id="cname" name="cname"><br><br>
-                <label for="mobile">Mobile No:</label><br>
-                <input type="number" id="mobile" name="mobile"><br><br>
-                <label for="date_need">Date When Need</label><br>
-                <input type="date" id="date_need" name="date_need"><br><br>
-                <label for="priorty">Priorty:</label><br>
-                <select name="priorty" id="priorty">
-                    <option value="early">Early</option>
-                    <option value="normal">Normal</option>
-                </select>
+            <div class="req_center">
+                <div class="req_first">
+                    <h4>Patient Details</h4><br>
+                    <div class="patient_row1">
+                        <div class="txt_field">
+                            <input type="text" id="pname" name="pname" required>
+                            <span></span>
+                            <label for="pname">Patient Name</label>
+                        </div>
+
+                        <div class="txt_field">
+                            <input type="text" type="text" id="dname" name="dname" required>
+                            <span></span>
+                            <label for="dname">Doctor Name</label>
+                        </div>
+                        <div class="bgroup_box">
+                            <label class="box_change" for="bgroup">Blood Group:</label><br><br>
+                            <select class="box_change" name="bgroup" id="bgroup">
+                                <option value="empty" disabled selected>--Blood Group--</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="patient_row2">
+                        <div class="txt_field">
+                            <input type="text" id="area" name="area" required>
+                            <span></span>
+                            <label for="area">Area</label>
+                        </div>
+                        <div class="txt_field">
+                            <input type="text" id="city" name="city" required>
+                            <span></span>
+                            <label for="city">City</label>
+                        </div>
+                        <div class="txt_field">
+                            <input type="number" id="pin" name="pin" required>
+                            <span></span>
+                            <label for="pin">Pin Code</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="req_second">
+                    <h4>Contact Details</h4>
+                    <div class="patient_row1">
+                        <div class="txt_field">
+                            <input type="text" id="cname" name="cname" required>
+                            <span></span>
+                            <label for="cname">Contact Name</label>
+                        </div>
+                        <div class="txt_field">
+                            <input type="number" id="mobile" name="mobile" required>
+                            <span></span>
+                            <label for="mobile">Mobile No</label>
+                        </div>
+                        <div class="txt_field ">
+                            <input type="text" id="date_need" name="date_need" onfocus="(this.type='date')"
+                                onblur="if(!this.value) this.type='text' " required>
+                            <span></span>
+                            <label for="date_need">Date When Need</label>
+                        </div>
+                    </div>
+
+                    <div class="patient_row2">
+                        <div class="patient_column">
+                            <label class="box_change" for="priorty">Priorty:</label><br><br>
+                            <select class="box_change" name="priorty" id="priorty">
+                                <option value="priority" disabled selected>--Select Priorty--</option>
+                                <option value="early">Early</option>
+                                <option value="normal">Normal</option>
+                            </select>
+                        </div>
+                        <div class="txt_field">
+                            <input type="email" id="email" name="email" required>
+                            <span></span>
+                            <label for="email">Email:</label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </form>
     </div>
+    <section class="counters">
+        <h1> Registered Donors</h1>
+        <div class="r_container">
+            <div class="o+group">
+                <p>O+ Donors</p>
+                <h1 class="counter" data-target="125">0</h1>
+            </div>
+            <div class="o-group">
+                <p>O- blood</p>
+                <h1 class="counter" data-target="16">0</h1>
+            </div>
+            <div class="a+group">
+                <p>A+ blood</p>
+                <h1 class="counter" data-target="152">0</h1>
+            </div>
+            <div class="a-group">
+                <p>A- blood</p>
+                <h1 class="counter" data-target="12">0</h1>
+            </div>
+            <div class="b+group">
+                <p>B+ blood</p>
+                <h1 class="counter" data-target="96">0</h1>
+            </div>
+            <div class="b-group">
+                <p>B- blood</p>
+                <h1 class="counter" data-target="35">0</h1>
+            </div>
+            <div class="ab+_group">
+                <p>AB+ blood</p>
+                <h1 class="counter" data-target="28">0</h1>
+            </div>
+            <div class="ab-_group">
+                <p>AB- blood</p>
+                <h1 class="counter" data-target="06">0</h1>
+            </div>
+        </div>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 | All rights reserved | Developed by Sedhuragavan L</p>
+        </div>
+    </footer>
 
-
-
+    
+    <script src="javascript/request.js"></script>
 </body>
 
 </html>
